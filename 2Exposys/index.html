@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<link rel="stylesheet" href="demo.css">
+<title>Home Page</title>
+</head>
+<style>
+	body{
+		background-image:linear-gradient(#FFCD38,#D400FF);
+		background-attachment:fixed;
+	}
+	</style>
+<body>
+	<form action="home" method="post">
+		<nav>
+			<button class="open-button"><a href="login.html">Login</a></button>
+			<button class="open-button2" name="btn" value="logout"><a href="login.html">Logout</a></button>
+		</nav>
+		<header>
+			<h1 class="heading">Mass-Mail Dispatcher</h1>
+		</header>
+		
+
+		<main id="main-class">
+			<div class="content">
+				<p>A Mass-Mail Dispacther is a system in which a sender can send message to many reciver at a time.For this purpose sender has to upload .CSV file .The website filters out the valid mails and invalid mails from uploded .CSV files. After verification the mails are listed out and email is created and send to valid mail</p>
+		
+
+				<!-- Buttons for three steps -->
+				<div class="box">
+					<!--Step 1 - Upload CSV-->
+					<div class="box1">
+						
+						<h5 class="btnBox">Step1:</h5>
+					</div>
+					<div class="box1">
+						<button type="submit" class="btnUpload boxBtn" name="btn"
+							value="upload">Upload CSV</button>
+					</div>
+
+					<!--Step 2 - Purifying and validating emails-->
+					<div class="box1">
+						<h5 class="btnBox">Step2:</h5>
+					</div>
+					<div class="box1">
+						<button type="submit" class="btnVarify boxBtn" name="btn"
+							value="Purified and Validated list">Purifying and validating emails</button>
+					</div>
+
+					<!--Step 3 - Sending mail-->
+					<div class="box1">
+						<h5 class="btnBox">Step3:</h5>
+					</div>
+					<div class="box1">
+						<button type="submit" class="btnSend boxBtn" name="btn"
+							value="send"><a href="sendmail.html">Send mails</a></button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</form>
+</body>
+</html>

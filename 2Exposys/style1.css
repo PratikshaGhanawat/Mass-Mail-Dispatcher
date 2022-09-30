@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:linear-gradient(#d1a624,#c03adb);
+    background-attachment:fixed;
+  
+}
+body{
+    background-image:linear-gradient(#FFCD38,#D400FF);
+		background-attachment:fixed;
+       
+}
+.top{
+    color: rgb(17, 16, 16);
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+   
+    flex-wrap: wrap;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+
+.select input {
+    background-color: rgb(10, 9, 9);
+    border: none;
+    margin: 6vh auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+    width: 350px;
+}
+
+.select input::file-selector-button {
+    background: #6a2020;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px #6b4559;
+    outline: none;
+}
+
+.select input::file-selector-button:hover {
+    background: #438a5e;
+    cursor: pointer;
+}
+
+
+.select h1 {
+    color: rgb(17, 16, 16);
+    font-size: 6rem;
+   
+    padding: 5vh;
+    text-align: center;
+    transition: .2s;
+}
+
+
+.select button {
+    padding: .8rem;
+    background: white;
+    border: 0;
+    font-size: 2.3vh;
+    
+    color: #206a5d;
+    outline: none;
+    cursor: pointer;
+    width: 40vh;
+    margin: 4vh auto;
+    border-radius: 2rem;
+    font-weight: 800;
+}
+
+
+.mailInfo form {
+   
+    background-color: rgb(7, 6, 6);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 3vw;
+    width: 90%;
+    max-width: 660px;
+    border-radius: .5rem;
+    transition: .2s;
+}
+.mailInfo form:hover {
+    transform: scale(1.02);
+}
+
+form h2 {
+    letter-spacing: .1rem;
+    word-spacing: .5rem;
+    color: rgb(7, 6, 6);
+    text-align: center;
+    font-weight: 900;
+    margin: 3vh 0;
+  
+    background-color: rgb(169, 167, 167);
+   
+}
+
+form input,
+textarea {
+    border: 0;
+    background: rgb(236, 235, 235);
+    padding: 1rem;
+    margin: 1vh 1vh;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+form textarea {
+    white-space: pre-line;
+}
+
+form button {
+    padding: .8rem;
+ 
+    background: #206a5d;
+    border: 0;
+    font-size: 2.3vh;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    width: 17vh;
+    margin: 1vh auto;
+    border-radius: 2rem;
+    margin-top: 2vh;
+    box-shadow: 5px 5px 10px black;
+}
+
+form button:hover {
+   
+    background: #438a5e;
+}
+
+.tables {
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 10vh auto;
+    color: white;
+    flex-wrap: wrap-reverse;
+}
+
+.tables h2 {
+    margin: 5vh 0;
+}
+
+.tables td:hover {
+    transform: scale(1.02);
+    color: #ffd4d8;
+}
+
+li {
+    display: inline-block;
+}
+
+
+.fa-brands:hover {
+    color: rgb(255, 255, 255);
+    background: #ff0015;
+    transform: scale(1.4);
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+    color: white;
+}
+
+footer>p {
+   
+    margin: 2rem;
+    font-size: larger;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+@media (max-width: 500px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 669px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .select h1 {
+        font-size: 3rem;
+        margin-top: 22vh;
+    }
+
+    .select input {
+        width: 35vh;
+        font-size: 1rem;
+        margin-top: 22vh;
+    }
+
+    .select input::file-selector-button {
+        padding: 1rem .5em;
+        
+    }
+
+    .mailInfo form {
+        
+        /* padding: 0 auto; */
+        width: 95%;
+        /* max-width: 660px; */
+        /* margin: 100% auto; */
+        margin-top: 60%;
+        /* display: block; */
+    }
+
+    .tables {
+        margin-top: 120vh;
+    }
+
+    form h2 {
+        letter-spacing: 0;
+        word-spacing:.2rem;
+        font-size: 1.6rem;
+    }
+   
+}
